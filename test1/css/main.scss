@@ -1,0 +1,196 @@
+$columns: 100%/12;
+$color_col-1: rgba(251, 241, 17, 0.22);
+$color_col-2: rgba(32, 251, 46, 0.26);
+$color_col-3: rgba(23, 174, 255, 0.1);
+$color_col-4: rgba(59, 82, 255, 0.18);
+$color_col-5: rgba(255, 159, 187, 0.41);
+$color_col-6: rgba(255, 132, 40, 0.22);
+$color_col-12: rgba(209, 171, 255, 0.22);
+
+
+$color_col-sx-1: rgba(251, 241, 17, 0.22);
+$color_col-sx-2: rgba(32, 251, 46, 0.26);
+$color_col-sx-3: rgba(23, 174, 255, 0.1);
+$color_col-sx-4: rgba(59, 82, 255, 0.18);
+$color_col-sx-5: rgba(255, 159, 187, 0.41);
+$color_col-sx-6: rgba(255, 132, 40, 0.22);
+$color_col-sx-12: rgba(209, 171, 255, 0.22);
+
+
+
+$color_col-md-1: rgba(251, 241, 17, 0.22);
+$color_col-md-2: rgba(32, 251, 46, 0.26);
+$color_col-md-3: rgba(23, 174, 255, 0.1);
+$color_col-md-4: rgba(59, 82, 255, 0.18);
+$color_col-md-5: rgba(255, 159, 187, 0.41);
+$color_col-md-6: rgba(255, 132, 40, 0.22);
+$color_col-md-12: rgba(209, 171, 255, 0.22);
+
+[class*='col-'] {
+  float: left;
+}
+
+[class*='col-'] {
+ position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+.col-1 {
+  max-width: $columns;
+  background-color: $color_col-1;
+}
+
+.col-2 {
+  max-width: $columns*2;
+  background-color: $color_col-2;
+}
+
+.col-3 {
+  max-width: $columns*3;
+  background-color: $color_col-3;
+}
+
+.col-4 {
+  max-width: $columns*4;
+  background-color: $color_col-4;
+}
+
+.col-5 {
+  max-width: $columns*5;
+  background-color: $color_col-5;
+}
+
+.col-6 {
+  max-width: $columns*6;
+  background-color: $color_col-6;
+}
+
+.col-12 {
+  max-width: $columns*12;
+  background-color: $color_col-12;
+}
+
+
+/*-------------------------------------*/
+
+@media all and (max-width: 576px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media  all and ( max-device-width: 576px) {
+  .col-sx {
+    max-width: 100%;
+  }
+
+  .col-sx-1 {
+    max-width: $columns;
+    background-color: $color_col-sx-1;
+  }
+  .col-sx-2 {
+    max-width: $columns*2;
+    background-color: $color_col-sx-2;
+  }
+  .col-sx-3 {
+    max-width: $columns*3;
+    background-color: $color_col-sx-3;
+  }
+  .col-sx-4 {
+    max-width: $columns*4;
+    background-color: $color_col-sx-4;
+  }
+  .col-sx-5 {
+    max-width: $columns*5;
+    background-color: $color_col-sx-5;
+  }
+  .col-sx-6 {
+    max-width: $columns*6;
+    background-color: $color_col-sx-6;
+  }
+
+  .col-sx-12 {
+    max-width: $columns*12;
+    background-color: $color_col-sx-12
+  }
+
+}
+
+@media all and (max-width: 992px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media  all and (max-device-width: 992px) {
+  .col-md {
+    max-width: 100%;
+  }
+
+  .col-md-1 {
+    max-width: $columns;
+    background-color: $color_col-md-1;
+  }
+  .col-md-2 {
+    max-width: $columns*2;
+    background-color: $color_col-md-2;
+  }
+  .col-md-3 {
+    max-width: $columns*3;
+    background-color: $color_col-md-3;
+  }
+  .col-md-4 {
+    max-width: $columns*4;
+    background-color: $color_col-md-4;
+  }
+  .col-md-5 {
+    max-width: $columns*5;
+    background-color: $color_col-md-5;
+  }
+  .col-md-6 {
+    max-width: $columns*6;
+    background-color: $color_col-md-6;
+  }
+
+  .col-md-12 {
+    max-width: $columns*12;
+    background-color: $color_col-md-12;
+  }
+
+}
+
+
+
+
+
